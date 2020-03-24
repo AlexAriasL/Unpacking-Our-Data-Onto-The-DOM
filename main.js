@@ -60,6 +60,7 @@ function writeToDocument(url) {
 
             //el.innerHTML += "<p>" + item.name + "</p>";
         });
+        // The replace method with the arguments (/,/g, " " ) searches for all the commas and replaces them with an empty string. 
         el.innerHTML = `<table>${tableHeaders}${tableRows}</table>${pagination}`.replace(/,/g, " " );
     });
 }
